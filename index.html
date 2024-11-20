@@ -18,10 +18,13 @@
   <body>
     <main>
       <div class="container">
-        <div>
-          <input type="text" placeholder="Guess Here">
+        <div class="flex flex-column flex-center  svh-100 gap-20">
+          <p class="guess-counter hidden">Guesses: <span class="guess-counter hidden"></span></p>
+          <input type="text" placeholder="Guess Here" class="guess-input hidden">
+          <div><p class="display hidden"></p></div>
         </div>
       </div>
+      <button class="start-btn">Start</button>
     </main>
   </body>
 </html>
