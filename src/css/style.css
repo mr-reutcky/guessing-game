@@ -51,13 +51,11 @@ input[type="text"] {
   -moz-appearance: textfield;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #fff;
   padding: 10px;
   font-size: 8rem;
   text-align: center;
-  transition: all 0.3s ease;
 }
 
 input[type="text"]::placeholder {
@@ -66,16 +64,15 @@ input[type="text"]::placeholder {
 }
 
 .display {
-  width: 250px;
+  width: 350px;
   height: 40px;
+  padding: 4px 0 0 10px;
   font-size: 2rem;
   color: #fff;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
 }
 
 button {

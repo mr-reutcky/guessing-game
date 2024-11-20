@@ -37,7 +37,7 @@ listen('click', startBtn, () => {
       const guess = parseInt(guessInput.value);
 
       if (isNaN(guess) || guess < 1 || guess > 100) {
-        display.textContent = 'Please enter a number between 1 and 100';
+        display.textContent = 'Enter number between 1 and 100';
         return;
       }
 
@@ -46,8 +46,11 @@ listen('click', startBtn, () => {
       guessInput.value = '';
 
       if (guess === randomNumber) {
-        display.textContent = `Congratulations!`;
+        display.textContent = `Congratulations! It took you ${guessCount} tries!`;
         setTimeout(() => {
+          guessCounter.classList.add('hidden');
+          guessInput.classList.add('hidden');
+          display.classList.add('hidden');
           startBtn.classList.remove('hidden');
           display.textContent = '';
           guessCounter.textContent = '';
