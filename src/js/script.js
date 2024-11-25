@@ -15,11 +15,13 @@ function sleep(duration) {
 }
 
 const startBtn = select('.start-btn');
+const container = select('.container');
 const guessCounter = select('.guess-counter');
 const guessInput = select('.guess-input');
 const display = select('.display');
 
 listen('click', startBtn, () => {
+  container.classList.add('show');
   guessCounter.classList.remove('hidden');
   guessInput.classList.remove('hidden');
   display.classList.remove('hidden');
